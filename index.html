@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" name=".">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web App Template</title>
+  
+  <link id="bootstrap-theme-css" rel="stylesheet" href="">
+
+  <script src="./services/commonService.js"></script>
+  <script name="Switch Themes (Dark/Light)">
+    if (CommonService.isDark())
+      document.getElementById('bootstrap-theme-css').setAttribute('href', './css/bootstrap-dark.min.css');
+    else
+      document.getElementById('bootstrap-theme-css').setAttribute('href', './css/bootstrap.min.css');
+  </script>  
+
+  <script name="Home Forward">
+    _dir = "./";
+      CommonService.init(_dir);
+      CommonService.goToPage("home/");
+  </script>
+
+</head>
+
+</html>
