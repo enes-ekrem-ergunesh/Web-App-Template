@@ -42,7 +42,7 @@ class CommonFrontend{
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             </form>
             <div class="d-flex text-end">
-              <button type="button" class="btn btn-outline-`+themevar3[themeMod]+` me-2">Login</button>
+              <button type="button" class="btn btn-outline-`+themevar3[themeMod]+` me-2"  data-bs-toggle="modal" data-bs-target="#login-modal">Login</button>
               <button type="button" class="btn btn-`+themevar4[themeMod]+`">Sign-up</button>
             </div>
           </div>
